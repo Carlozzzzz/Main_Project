@@ -1,0 +1,94 @@
+/* ------------HOMEPAGE------------ */
+
+/* -----Content----- */
+#mainContent .carousel-item {
+    height: 20rem;
+    background: black;
+    color: #fff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#mainContent .carousel-item .container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 50px;
+}
+
+#mainContent .content-header {
+    font-weight: 800;
+}
+
+#mainContent .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    /* adjusting bg-color */
+    opacity: 0.5;
+
+}
+
+/* -----End Content----- */
+
+
+/* -----Subjects----- */
+
+/* -----End Subjects----- */
+
+/* ------------END HOMEPAGE------------ */
+
+
+/* ------------SUBJECT.php------------ */
+
+#subjectMainContent .subject-section {
+    margin-top: 0.8rem;
+}
+
+#subjectMainContent .nav-tabs {
+    border-bottom: 0px solid transparent;
+    --bs-nav-tabs-border-width: 0px;
+}
+
+#subjectMainContent .nav-item .nav-link{
+    padding-left: .8rem;
+}
+
+#subjectMainContent .section-control{
+    background-color: #EFEFEF;
+}
+
+/* -----Module Tab- #subjectMainContent ---- */
+
+#subjectMainContent .subject-section .subject-table{
+    border-top: inherit;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#subjectMainContent .subject-table .section-link{
+    text-decoration: none;
+    color: #212529;
+    font-weight: normal;
+}
+
+#module-tab-pane .subject-table .cell-2{
+    width: 20%;
+    text-align: right;
+    font-weight: normal;
+
+}
+
+
+
+
+
+/* ------------END SUBJECT.php------------ */

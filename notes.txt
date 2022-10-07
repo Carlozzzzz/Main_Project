@@ -1,0 +1,7 @@
+Font - Monseratt
+h1 - main title - 22.4
+h3 - sub title -
+h4 - subjects name
+p - description 
+main color - #131415
+content background color - #E3E4EF
