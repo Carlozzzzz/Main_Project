@@ -95,7 +95,7 @@
                                                 <ul class="nav justify-content-between align-items-center">
                                                     <li class="nav-item">3 task</li>
                                                     <li class="nav-item table-control-collapse"><a class="nav-link"
-                                                            type="">6 Content</a> </li>
+                                                            type="">6 Content <i class="fa-solid fa-chevron-down"></i></a> </li>
                                                 </ul>
                                             </div>
                                         </div>
