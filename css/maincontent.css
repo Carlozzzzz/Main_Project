@@ -66,28 +66,13 @@
 
 /* -----Module Tab- #subjectMainContent ---- */
 
-#subjectMainContent .subject-section .subject-table{
-    border-top: inherit;
-    width: 100%;
-    background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.card-header{
+    border-bottom-width: 0px;
 }
 
-#subjectMainContent .subject-table .section-link{
-    text-decoration: none;
-    color: #212529;
-    font-weight: normal;
+.card-body{
+    border-top:inherit;
 }
-
-#module-tab-pane .subject-table .cell-2{
-    width: 20%;
-    text-align: right;
-    font-weight: normal;
-
-}
-
-
 
 
 
