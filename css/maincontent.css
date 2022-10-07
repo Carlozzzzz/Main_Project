@@ -56,24 +56,42 @@
     --bs-nav-tabs-border-width: 0px;
 }
 
-#subjectMainContent .nav-item .nav-link{
+#subjectMainContent .nav-item .nav-link {
     padding-left: .8rem;
 }
 
-#subjectMainContent .section-control{
+#subjectMainContent .section-control {
     background-color: #EFEFEF;
 }
 
 /* -----Module Tab- #subjectMainContent ---- */
-
-.card-header{
+#subjectMainContent .nav-link{
+    color: inherit;
+    cursor: pointer;
+}
+.card-header {
     border-bottom-width: 0px;
 }
 
-.card-body{
-    border-top:inherit;
+.card-body {
+    border-top: inherit;
+}
+
+.section-link {
+    text-decoration: none;
+    color: #212529;
+    font-weight: normal;
+}
+
+thead tr {
+    text-align: right;
 }
 
 
+
+tr td:nth-of-type(2), tr td:nth-of-type(3) {
+    text-align: right;
+    
+}
 
 /* ------------END SUBJECT.php------------ */

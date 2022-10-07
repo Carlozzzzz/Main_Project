@@ -4,7 +4,7 @@
             <nav class="navbar navbar-expand-md navbar-top">
                 <div class="container-fluid">
                     <!-- Left -->
-                    <a href="#" class="navbar-brand fs-3 page-title">Dashboard</a>
+                    <a href="#" class="navbar-brand fs-3 page-title">Change Title</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
                         aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
