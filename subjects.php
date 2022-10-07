@@ -18,11 +18,6 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/72c32f013b.js" crossorigin="anonymous"></script>
-    <style>
-    a {
-        color: red;
-    }
-    </style>
 
 </head>
 
@@ -64,6 +59,11 @@
                                         aria-controls="exams-tab-pane" aria-selected="false">Exams</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="finished-tab" data-bs-toggle="tab"
+                                        data-bs-target="#finished-tab-pane" type="button" role="tab"
+                                        aria-controls="exfinishedams-tab-pane" aria-selected="false">Finished</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="progress-tab" data-bs-toggle="tab"
                                         data-bs-target="#progress-tab-pane" type="button" role="tab"
                                         aria-controls="progress-tab-pane" aria-selected="false">Progress</button>
@@ -86,16 +86,17 @@
                                             reprehenderit voluptas sed et sint.</p>
                                     </div>
 
-                                    
+
                                     <div class="section-module mt-2 card">
                                         <div class="card-header">
-                                            <h4 class="section-title">Section 2</h4>
+                                            <h4 class="section-title">Section 1</h4>
                                             <br>
                                             <div>
                                                 <ul class="nav justify-content-between align-items-center">
                                                     <li class="nav-item">3 task</li>
                                                     <li class="nav-item table-control-collapse"><a class="nav-link"
-                                                            type="">6 Content <i class="fa-solid fa-chevron-down"></i></a> </li>
+                                                            type="">6 Content <i
+                                                                class="fa-solid fa-chevron-down"></i></a> </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -112,7 +113,8 @@
 
                                                 <tbody>
                                                     <tr>
-                                                        <td class=""><a class="section-link" href="student.module.php">Module
+                                                        <td class=""><a class="section-link"
+                                                                href="student.module.php">Module
                                                                 1</a></td>
                                                         <td class="">-</td>
                                                         <td class="">-</td>
@@ -132,15 +134,54 @@
                                 </div>
 
                                 <!-- Task Tab -->
-                                <!-- Working -->
-                                <?php include("assets/tester.view.php") ?>
-                                
+                                <div class="tab-pane fade" id="task-tab-pane" role="tabpanel" aria-labelledby="task-tab"
+                                    tabindex="0">
+                                    <div class="overflow-hidden m-1">
+                                        <table class="table align-middle mb-0 bg-white">
+                                            <thead class="">
+                                                <tr>
+                                                    <th><span class="task-list">Task List</span>
+                                                    </th>
+                                                    <th>Due</th>
+                                                    <th>Grade</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="student.assignment.php">01 Assignment</a></td>
+                                                    <td>June 05, 5:00</td>
+                                                    <td>~/20</td>
+                                                    <td>Not Yet</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="student.essay.php">01 Essay</a></td>
+                                                    <td>June 05, 5:00</td>
+                                                    <td>~/50</td>
+                                                    <td>Not Yet</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="student.project.php">03 Project</a></td>
+                                                    <td>June 05, 5:00</td>
+                                                    <td>~/50</td>
+                                                    <td>Not Yet</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
 
                                 <!-- Exam Tab -->
-                                <div class="tab-pane fade" id="exams-tab-pane" role="tabpanel"
-                                    aria-labelledby="exams-tab" tabindex="0">
+                                <!-- Working -->
+                                <?php include("assets/tester.view.php") ?>
+
+                                <!-- Finished Tab -->
+                                <div class="tab-pane fade" id="finished-tab-pane" role="tabpanel"
+                                    aria-labelledby="finished-tab" tabindex="0">
                                     <div class="custom-border">
-                                        <h3>Exam Tab</h3>
+                                        <h3>Finished Tab</h3>
                                     </div>
                                 </div>
 
@@ -151,6 +192,7 @@
                                         <h3>Progress Tab</h3>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

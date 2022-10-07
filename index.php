@@ -18,11 +18,7 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/72c32f013b.js" crossorigin="anonymous"></script>
-    <style>
-    a {
-        color: red;
-    }
-    </style>
+   
 
 </head>
 

@@ -1,19 +1,25 @@
 /* -------Defaults------- */
 body {
     font-family: 'Montserrat', sans-serif;
+    /* background-color: hsl(0, 0%, 94%); */
 }
 
-h3{
+p,td{
+    font-size: .9rem;
+}
+h3 {
     font-size: 1.4rem;
 }
-h4{
+
+h4 {
     font-size: 1.1rem;
 }
 
 /* ------Header Navbar Styles------ */
-#header .page-title{
+#header .page-title {
     font-weight: bolder;
 }
+
 .navbar-top {
     background-color: #002E94;
 }
@@ -32,15 +38,15 @@ h4{
 /* ------End Navbar Styles------ */
 
 /* -----custom------- */
-.custom-border{
+.custom-border {
     border: 1px #C8C8C8 solid;
-    border-radius: 5px;  
+    border-radius: 5px;
     padding: 10px 10px;
 }
 
-.custom-hide{
-   
-    display:none;
+.custom-hide {
+
+    display: none;
 }
 
 /* -----end custom------- */
@@ -50,8 +56,8 @@ h4{
 
 /* ------Side Navbar Styles------ */
 
-#sideNav{
-    box-sizing: content-box; 
+#sideNav {
+    box-sizing: content-box;
     background: #2C384A;
     padding: 0;
     min-height: 100vh;
@@ -68,8 +74,8 @@ i {
 #sideNav .navbar-nav .side-button-logo {
     margin-top: 1.2rem;
     color: #fff;
-    display:none;
-    
+    display: none;
+
 }
 
 
@@ -103,7 +109,7 @@ i {
 }
 
 /* -----Banner Right----- */
-#rightBanner img{
+#rightBanner img {
     width: 100%;
 }
 
@@ -117,7 +123,7 @@ i {
     #content .row {
         overflow: hidden;
     }
-    
+
     .navbar-top .navbar-brand {
         padding-left: 0;
     }
@@ -125,69 +131,72 @@ i {
     #sideNav {
         position: absolute;
         width: 10%;
-        height: 2500px; /*adjust when more content*/
+        height: 2500px;
+        /*adjust when more content*/
         /* min-height: 100%; edit */
         transition: all .5s ease;
     }
-    #sideNav.customActive{
+
+    #sideNav.customActive {
         width: 60%;
     }
 
     #sideNav .navbar-nav .side-button-logo {
         display: block;
-        
+
     }
 
     #sideNav.customActive .side-button-logo {
         text-align: left;
     }
-    
 
-    #sideNav .navbar-nav .sub-title{
+
+    #sideNav .navbar-nav .sub-title {
         /* come */
-        display:none;
+        display: none;
         transition: all .5s ease;
 
     }
 
-    #sideNav.customActive .navbar-nav .sub-title{
-        display:block;
+    #sideNav.customActive .navbar-nav .sub-title {
+        display: block;
         transition: all .5s ease;
 
     }
 
-    #sideNav .navbar-nav .search-input{
+    #sideNav .navbar-nav .search-input {
         /* come */
-        display:none;
-        transition: all .5s ease;
-
-    }
-    #sideNav.customActive .navbar-nav .search-input{
-        display:inline-block;
+        display: none;
         transition: all .5s ease;
 
     }
 
+    #sideNav.customActive .navbar-nav .search-input {
+        display: inline-block;
+        transition: all .5s ease;
 
-    #sideNav li.nav-item{
+    }
+
+
+    #sideNav li.nav-item {
         transition: all .5s ease;
         margin: 0 !important;
     }
 
-    #sideNav.customActive li.nav-item{
+    #sideNav.customActive li.nav-item {
         margin: 10px 15px !important;
-        
+
     }
 
-    #sideNav li span{
+    #sideNav li span {
         transition: all .5s ease;
         display: none;
     }
 
-    #sideNav.customActive li  span{
+    #sideNav.customActive li span {
         display: inline-block;
     }
-    
+
 
     /* ---------------Main content----------------*/
     .main-content {
@@ -197,6 +206,7 @@ i {
         min-height: 100%;
         transition: all .5s ease;
     }
+
     #sideNav.customActive~.main-content {
         width: calc(100% - 60%);
         left: 60%;

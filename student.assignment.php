@@ -18,12 +18,11 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/72c32f013b.js" crossorigin="anonymous"></script>
-    
 
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header global-->
     <?php include('assets../header.view.php') ?>
 
     <!--Body content -->
@@ -32,7 +31,7 @@
 
         <div class="row overflow-hidden">
 
-            <!-- Left Side Nav -->
+            <!-- Left Side Nav global-->
             <div class="col-md-2 " id="sideNav">
                 <?php include('assets../sidebar.view.php') ?>
             </div>
@@ -42,15 +41,15 @@
                 <div class="row mx-0">
                     <div class="custom-border">
                         <a href="subjects.php" class="text-primary">Back</a>
-                        <h3 class="text-center">Section 2 - Modules</h3>
-                        <p>Module 2</p>
+                        <h3 class="text-center">Section 1 - Assignment</h3>
+                        <p>01 Assignment</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Banner -->
+            <!-- Right Banner global-->
             <div class="col-md-2 py-4 " id="rightBanner">
-                    <?php include('assets../banner.view.php') ?>
+                <?php include('assets../banner.view.php') ?>
             </div>
 
         </div>
@@ -59,7 +58,16 @@
 
     <!-- Javascrpit Files -->
     <script src="js/main.js"></script>
-    
+    <script>
+    let btn2 = document.querySelector(".table-control-collapse");
+    let customHideTable = document.querySelector(".section-table-content");
+    customHideTable.classList.toggle("custom-hide");
+    btn2.onclick = function() {
+        customHideTable.classList.toggle("custom-hide");
+    };
+    </script>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">

@@ -83,15 +83,9 @@
     font-weight: normal;
 }
 
-thead tr {
-    text-align: right;
-}
 
-
-
-tr td:nth-of-type(2), tr td:nth-of-type(3) {
-    text-align: right;
-    
+#subjectMainContent .task-table{
+    border: 1px solid black;
 }
 
 /* ------------END SUBJECT.php------------ */
