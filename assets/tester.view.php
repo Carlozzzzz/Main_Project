@@ -2,7 +2,7 @@
     <div class="subject-header">
         <h4 class="section-title">Section 2</h4>
         <div>
-            <ul class="d-flex">
+            <ul class="d-flex text-white">
                 <li>3 task</li>
                 <li><a id="tableControlCollapse" href="#user-section">6 Content</a> </li>
             </ul>
