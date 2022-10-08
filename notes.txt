@@ -5,3 +5,13 @@ h4 - subjects name
 p - description 
 main color - #131415
 content background color - #E3E4EF
+
+
+
+$(document).ready(function(){
+  activaTab('aaa');
+});
+
+function activaTab(tab){
+  $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+};

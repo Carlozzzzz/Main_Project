@@ -41,18 +41,20 @@
                 <div class="row mx-0">
                     <div class="custom-border">
                         <div>
-
+                            <!-- Nav tabs -->
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="module-tab" data-bs-toggle="tab"
                                         data-bs-target="#module-tab-pane" type="button" role="tab"
                                         aria-controls="module-tab-pane" aria-selected="true">Modules</button>
                                 </li>
+
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="task-tab" data-bs-toggle="tab"
                                         data-bs-target="#task-tab-pane" type="button" role="tab"
                                         aria-controls="task-tab-pane" aria-selected="false">Task</button>
                                 </li>
+                                
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="exams-tab" data-bs-toggle="tab"
                                         data-bs-target="#exams-tab-pane" type="button" role="tab"
@@ -76,61 +78,57 @@
                                 <!-- Modules Tab -->
                                 <div class="tab-pane fade show active" id="module-tab-pane" role="tabpanel"
                                     aria-labelledby="module-tab" tabindex="0">
+                                    <div>
+                                        <div class="section-control custom-border subject-desc mt-2">
+                                            <h3>Mapehhhehe Design</h3>
+                                            <p>BSIT 4.1B</p>
+                                            <p>Course Description</p>
+                                            <p>description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+                                                ipsum
+                                                reprehenderit voluptas sed et sint.</p>
+                                        </div>
+                                        <div class="section-module mt-2 card">
+                                            <div class="card-header">
+                                                <h4 class="section-title">Section 1</h4>
+                                                <br>
+                                                <div>
+                                                    <ul class="nav justify-content-between align-items-center">
+                                                        <li class="nav-item">3 task</li>
+                                                        <li class="nav-item table-control-collapse"><a class="nav-link"
+                                                                type="">6 Content <i
+                                                                    class="fa-solid fa-chevron-down"></i></a> </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
 
-                                    <div class="section-control custom-border subject-desc mt-2">
-                                        <h3>Mapehhhehe Design</h3>
-                                        <p>BSIT 4.1B</p>
-                                        <p>Course Description</p>
-                                        <p>description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-                                            ipsum
-                                            reprehenderit voluptas sed et sint.</p>
-                                    </div>
+                                            <div class="card-body section-table-content">
+                                                <table class="table table-hover p-0 section-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Grade</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
 
-
-                                    <div class="section-module mt-2 card">
-                                        <div class="card-header">
-                                            <h4 class="section-title">Section 1</h4>
-                                            <br>
-                                            <div>
-                                                <ul class="nav justify-content-between align-items-center">
-                                                    <li class="nav-item">3 task</li>
-                                                    <li class="nav-item table-control-collapse"><a class="nav-link"
-                                                            type="">6 Content <i
-                                                                class="fa-solid fa-chevron-down"></i></a> </li>
-                                                </ul>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class=""><a class="section-link"
+                                                                    href="student.module.php">Module
+                                                                    1</a></td>
+                                                            <td class="">-</td>
+                                                            <td class="">-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class=""><a class="section-link" href="">Assignment</a></td>
+                                                            <td class="">40/50</td>
+                                                            <td class="">Passed</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
-
-                                        <div class="card-body section-table-content">
-                                            <table class="table table-hover p-0 section-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th>Grade</th>
-                                                        <th>Status</th>
-                                                    </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                    <tr>
-                                                        <td class=""><a class="section-link"
-                                                                href="student.module.php">Module
-                                                                1</a></td>
-                                                        <td class="">-</td>
-                                                        <td class="">-</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class=""><a class="section-link" href="">Assignment</a></td>
-                                                        <td class="">40/50</td>
-                                                        <td class="">Passed</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
                                     </div>
-
-
-
                                 </div>
 
                                 <!-- Task Tab -->
@@ -169,7 +167,6 @@
                                             </tbody>
                                         </table>
                                     </div>
-
                                 </div>
 
 
@@ -209,30 +206,24 @@
 
 
     <!-- Javascrpit Files -->
-    <script src="js/main.js"></script>
-    <script>
-    let btn2 = document.querySelector(".table-control-collapse");
-    let customHideTable = document.querySelector(".section-table-content");
-    customHideTable.classList.toggle("custom-hide");
-    btn2.onclick = function() {
-        customHideTable.classList.toggle("custom-hide");
-    };
-    </script>
+   
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-    </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script> -->
+    </script>
 
     <!-- J-query -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+ 
 </body>
 
 </html>

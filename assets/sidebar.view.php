@@ -14,10 +14,11 @@
                      <i class="fa-solid fa-book side-logo"></i>
                      <span class="link_name">Subjects</span></a>
              </li>
-             <li class="nav-item"><a href="" class="nav-link">
+             <li class="nav-item"><a href="" type="button" class="nav-link task-link" id="taskLinkBtn">
                      <i class="fa-solid fa-list-check side-logo"></i>
                      <span class="link_name">Tasks</span></a>
              </li>
+
              <li class="nav-item"><a href="" class="nav-link">
                      <i class="fa-solid fa-pen-clip side-logo"></i>
                      <span class="link_name">Exams</span></a>
