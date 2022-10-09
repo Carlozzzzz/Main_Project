@@ -37,22 +37,9 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-md-8 py-4 main-content" id="subjectMainContent">
-               <div class="custom-border">
-
-                    <div class="img-bg"></div>
-                    <img src="" alt="" class="profile-img">
-               </div>
-               <div class="container-fluid">
-                <div class="row">
-                    <div class="col-6">
-                        <h3>Maralit III, Carlos Romulo P.</h3>
-                        <h4>BSIT 4.1B</h4>
-                        
-                    </div>
-                </div>
-               </div>
-            </div>
+            <!-- Working -->
+            <?php include("assets/tester.view.php") ?>
+            
 
             <!-- Right Banner global-->
             <div class="col-md-2 py-4 " id="rightBanner">
@@ -65,15 +52,7 @@
 
     <!-- Javascrpit Files -->
     <script src="js/main.js"></script>
-    <script>
-    let btn2 = document.querySelector(".table-control-collapse");
-    let customHideTable = document.querySelector(".section-table-content");
-    customHideTable.classList.toggle("custom-hide");
-    btn2.onclick = function() {
-        customHideTable.classList.toggle("custom-hide");
-    };
-    </script>
-
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

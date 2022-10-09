@@ -9,9 +9,9 @@ btn.onclick = function () {
 }
 
 //custom hide
-let btn2 = document.querySelector(".table-control-collapse");
+//subject.php #module-tab-pane .nav 
+let btn2 = document.querySelector("#module-tab-pane .table-control-collapse");
 let customHideTable = document.querySelector(".section-table-content");
-customHideTable.classList.toggle("custom-hide");
 btn2.onclick = function () {
     customHideTable.classList.toggle("custom-hide");
 };

@@ -58,14 +58,7 @@
 
     <!-- Javascrpit Files -->
     <script src="js/main.js"></script>
-    <script>
-    let btn2 = document.querySelector(".table-control-collapse");
-    let customHideTable = document.querySelector(".section-table-content");
-    customHideTable.classList.toggle("custom-hide");
-    btn2.onclick = function() {
-        customHideTable.classList.toggle("custom-hide");
-    };
-    </script>
+  
 
 
     <!-- Bootstrap JS -->

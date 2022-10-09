@@ -37,7 +37,7 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-md-8 py-4 main-content" id="subjectMainContent">
+            <div class="col-md-8 py-4 main-content" id="">
                
             </div>
 

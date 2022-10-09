@@ -26,8 +26,7 @@
                             <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">User </a>
                             <ul class="dropdown-menu  dropdown-menu-end">
-                                <!-- Working -->
-                                <?php //include("assets/tester.view.php") ?>
+                                
                                 <li><a href="student.profile.php" class="dropdown-item">profile</a></li>
                                 <li><a href="#" class="dropdown-item">logout</a></li>
                             </ul>
