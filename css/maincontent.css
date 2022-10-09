@@ -118,6 +118,102 @@
 
 
 
-/* ------------STUDENT.PROFILE.php------------ */
+/* ------------STUDENT.PROFILE.php #studentProfile------------ */
+#studentProfile .img-section {
+    position:relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 90px;
+}
 
+#studentProfile .img-section .overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+}
+
+
+#studentProfile .img-section .profile-img{
+    position: absolute;
+    bottom: -75px;
+    z-index: 99;
+    width: 150px;
+    opacity: .9;
+
+}
+
+/* tablist */
+#studentProfile .tablist .tabcontent{
+    margin-left: 13px;
+}
+
+#studentProfile .tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#studentProfile .tab button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+}
+
+.tab button.active{
+    background-color: #ccc;
+}
+
+.tabcontent{
+    display: none;
+    padding: 6px 12px; 
+    border: 1px solid #ccc;
+    
+}
 /* ------------END STUDENT.PROFILE.php------------ */
+
+/* 
+.carousel-item {
+    height: 20rem;
+    background: black;
+    color: #fff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#mainContent .carousel-item .container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 50px;
+}
+
+#mainContent .content-header {
+    font-weight: 800;
+}
+
+#mainContent .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    /* adjusting bg-color 
+    opacity: 0.5;
+
+} */

@@ -195,7 +195,12 @@ i {
     #sideNav.customActive li span {
         display: inline-block;
     }
-
+    
+    /* student.profile.php */
+    #studentProfile .student-parent{
+        justify-content:start !important;
+        margin-top: 1rem;
+    }
 
     /* ---------------Main content----------------*/
     .main-content {
