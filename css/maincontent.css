@@ -88,4 +88,30 @@
     border: 1px solid black;
 }
 
+/* Subject Student Progress */
+
+.circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #231c3d;
+  }
+/* -----Subject Student Progress----- */
+  
 /* ------------END SUBJECT.php------------ */

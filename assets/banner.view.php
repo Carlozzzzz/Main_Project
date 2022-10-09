@@ -20,3 +20,11 @@
         </div>
     </div>
 </div>
+<div class="custom-border mt-3">
+    <div class="announcement-mini">
+        <h4>Parent</h4>
+        <div class="deadlines-item">
+            <p class="text-muted">Juan Dela Crux</p>
+        </div>
+    </div>
+</div>
