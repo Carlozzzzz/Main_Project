@@ -14,7 +14,8 @@
                      <i class="fa-solid fa-book side-logo"></i>
                      <span class="link_name">Subjects</span></a>
              </li>
-             <li class="nav-item"><a href="" type="button" class="nav-link task-link" id="taskLinkBtn">
+                <!-- change me -->
+             <li class="nav-item"><a href="" type="button" class="nav-link task-link" id="taskLinkBtn" > 
                      <i class="fa-solid fa-list-check side-logo"></i>
                      <span class="link_name">Tasks</span></a>
              </li>

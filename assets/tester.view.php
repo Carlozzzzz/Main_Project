@@ -1,78 +1,211 @@
-<div class="col-md-8 py-4 main-content" id="studentProfile">
-    <div class=" custom-border">
-        <div class="img-section">
-            <img class="profile-img ms-5" src="images/img-profile.png" alt="">
+<div class="row mx-0 mt-3 subject-list" id="mainPageSubject">
+    <div class="container-fluid custom-border">
 
-            <div class="overlay-image" style="background-image:url(images/bg-profile.png);"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="row profile-info mx-4">
+        <h3>Subjects</h3>
+        <div class="row ">
 
-                <!-- Main student information -->
-                <div class="col-md-8 col-sm-12" id="studentProfile">
-                    <h3>Maralit III, Carlos Romulo P.</h3>
-                    <p class="text-muted">BSIT 4.1B</p>
-                    <div class="tab mt-5">
-                        <button class="tablinks" onclick="openCity(event, 'studentInfoPane')"
-                            id="defaultOpen">Info</button>
-                        <button class="tablinks" onclick="openCity(event, 'studentSubjectPane')">Subject</button>
-                        <button class="tablinks" onclick="openCity(event, 'studentProgressPane')">Progress</button>
-                    </div>
+        <!-- Subjects Display -->
+            <div class="col-sm-6 col-md-6 col-lg-4 pt-2">
+                <div class="card">
+                    <img src="images/test2.png" class="card-img-top" alt="Subject Image">
 
-                    <div id="studentInfoPane" class="tabcontent">
-                        <p>Campus : STI College Lipa</p>
-                        <p>Academic level : Tertiary</p>
-                        <p>Section : BSIT 4.1B</p>
-                        <p>Program : BSIT</p>
-                        <p>Year level : 4Y1</p>
-                        <p>Student ID : 2000149946</p>
-                    </div>
+                    <div class="card-body">
 
-                    <div id="studentSubjectPane" class="tabcontent">
-                        <p>Subject 1</p>
-                        <p>Subject 2</p>
-                        <p>Subject 3</p>
-                        <p>Subject 4</p>
-                    </div>
+                        <div class="progress-bar me-3">
+                            <div class="circular-progress">
+                                <div class="value-container"></div>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Tsismiss Algorithm</h3>
+                        <p class="card-text">BSIT 4.1B</p>
+                        <p class="card-text ">Prof. Domeng Zu Gat</p>
+                        <div class="text-center my-3">
+                            <button class="btn startBtn">Start</button>
+                        </div>
 
-                    <div id="studentProgressPane" class="tabcontent">
-                        <p>Progress...</p>
-                    </div>
-                </div>
+                        <div class="card-menus mt-4 d-flex justify-content-between ">
+                            <button type="button" class="btn position-relative p-0">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
 
-                <!-- Student Guardian/Paarent -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="student-parent d-flex justify-content-end">
-                        <div class="custom-border d-inline-flex flex-column ">
-                            <h3>Dingdong Panter</h3>
-                            <p>Ancestor</p>
+                            <button type="button" class="btn position-relative p-0">
+                            <i class="fa-regular fa-clipboard"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 pt-2">
+                <div class="card">
+                    <img src="images/test2.png" class="card-img-top" alt="Subject Image">
+
+                    <div class="card-body">
+
+                        <div class="progress-bar me-3">
+                            <div class="circular-progress">
+                                <div class="value-container"></div>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Tsismiss Algorithm</h3>
+                        <p class="card-text">BSIT 4.1B</p>
+                        <p class="card-text ">Prof. Domeng Zu Gat</p>
+                        <div class="text-center my-3">
+                            <button class="btn startBtn">Start</button>
+                        </div>
+
+                        <div class="card-menus mt-4 d-flex justify-content-between ">
+                            <button type="button" class="btn position-relative p-0">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+
+                            <button type="button" class="btn position-relative p-0">
+                            <i class="fa-regular fa-clipboard"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-4 pt-2">
+                <div class="card">
+                    <img src="images/test2.png" class="card-img-top" alt="Subject Image">
+
+                    <div class="card-body">
+
+                        <div class="progress-bar me-3">
+                            <div class="circular-progress">
+                                <div class="value-container"></div>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Tsismiss Algorithm</h3>
+                        <p class="card-text">BSIT 4.1B</p>
+                        <p class="card-text ">Prof. Domeng Zu Gat</p>
+                        <div class="text-center my-3">
+                            <button class="btn startBtn">Start</button>
+                        </div>
+
+                        <div class="card-menus mt-4 d-flex justify-content-between ">
+                            <button type="button" class="btn position-relative p-0">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+
+                            <button type="button" class="btn position-relative p-0">
+                            <i class="fa-regular fa-clipboard"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 pt-2">
+                <div class="card">
+                    <img src="images/test2.png" class="card-img-top" alt="Subject Image">
+
+                    <div class="card-body">
+
+                        <div class="progress-bar me-3">
+                            <div class="circular-progress">
+                                <div class="value-container"></div>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Tsismiss Algorithm</h3>
+                        <p class="card-text">BSIT 4.1B</p>
+                        <p class="card-text ">Prof. Domeng Zu Gat</p>
+                        <div class="text-center my-3">
+                            <button class="btn startBtn">Start</button>
+                        </div>
+
+                        <div class="card-menus mt-4 d-flex justify-content-between ">
+                            <button type="button" class="btn position-relative p-0">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+
+                            <button type="button" class="btn position-relative p-0">
+                            <i class="fa-regular fa-clipboard"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    3
+                                </span>
+                            </button>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
-
 </div>
 
+
 <script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+//index.php **Progress working
+let subjectProgress = document.querySelector("#mainPageSubject .circular-progress");
+var moduleCount = document.querySelectorAll('#mainPageSubject p.project-quiz').length;
+
+let totalModule = 10; // change me
+let speed = 10;
+
+// Calculate Progress - (viewed module / total module) * 100
+let subjectProgressEndValue = progressEndValue(6, totalModule);
+
+progressDisplay(subjectProgress, subjectProgressEndValue);
+
+function progressDisplay(progressIndicator, endValue) {
+    let progressValue = 0;
+    let progress = setInterval(() => {
+        progressValue++;
+        if (endValue == 0) {
+            progressValue = 0;
+        }
+
+        progressIndicator.style.background = `conic-gradient(
+        #FFD61E ${progressValue * 3.6}deg,
+        #fff ${progressValue * 3.6}deg
+    )`;
+        if (progressValue == endValue) {
+            clearInterval(progress);
+        }
+    }, speed);
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+function progressEndValue(count, total) {
+    let result = Math.round((count / total) * 100);
+    if (result == 0) {
+        return 100;
+    }
+    return result;
+}
 </script>
-<!-- 
- -->

@@ -90,7 +90,7 @@
                                                 <div>
                                                     <ul class="nav justify-content-between align-items-center">
                                                         <li class="nav-item">3 task</li>
-                                                        <li class="nav-item table-control-collapse"><a class="nav-link" 
+                                                        <li class="nav-item table-control-collapse"><a class="nav-link"
                                                                 type="">6 Content <i
                                                                     class="fa-solid fa-chevron-down"></i></a> </li>
                                                     </ul>
@@ -227,7 +227,7 @@
                                 </div>
 
                                 <!-- Progress Tab -->
-                                
+
                                 <div class="tab-pane fade" id="progress-tab-pane" role="tabpanel"
                                     aria-labelledby="progress-tab" tabindex="0">
                                     <div class="custom-border p-5">
@@ -309,6 +309,97 @@
     <!-- J-query -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    //custom hide
+    //subject.php #module-tab-pane .nav 
+    let btn2 = document.querySelector("#module-tab-pane .table-control-collapse");
+    let customHideTable = document.querySelector(".section-table-content");
+    btn2.onclick = function() {
+        customHideTable.classList.toggle("custom-hide");
+    };
+
+
+    //Progress Pane
+
+
+    //subject.php ** Progress
+
+    //Quiz
+    // color indicator
+    let quizProgress = document.querySelector("#studentQuizProgress .circular-progress");
+    let quizStartValue = document.querySelector("#studentQuizProgress .value-container");
+    var quizCount = document.querySelectorAll('#student p.student-quiz').length;
+
+    let totalQuiz = 11; // change me
+    let quizProgressEndValue = progressEndValue(quizCount, totalQuiz);
+
+    //Projects
+    let projectsProgress = document.querySelector("#studentProjectsProgress .circular-progress");
+    let projectsStartValue = document.querySelector("#studentProjectsProgress .value-container");
+    var projectsCount = document.querySelectorAll('#student p.project-quiz').length;
+
+    let totalProjects = 0; // change me
+    let projectsProgressEndValue = progressEndValue(projectsCount, totalQuiz);
+
+    //Exam Progress
+    let examProgress = document.querySelector("#studentExamProgress .circular-progress");
+    let examStartValue = document.querySelector("#studentExamProgress .value-container");
+    var examCount = document.querySelectorAll('#student p.student-exam').length;
+
+    let totalExam = 15; // change me
+    let examProgressEndValue = progressEndValue(examCount, totalExam);
+
+    //end-----------------
+    //Assignment
+    let assignmentProgress = document.querySelector("#studentAssignmentProgress .circular-progress");
+    let assignmentStartValue = document.querySelector("#studentAssignmentProgress .value-container");
+    var assignmentCount = document.querySelectorAll('#student p.student-assignment').length;
+
+    let totalAssignment = 11; // change me
+    let assignmentProgressEndValue = progressEndValue(6, totalAssignment);
+
+
+
+    let speed = 10;
+
+    //Call index.php * subjectProgress functions
+    progressDisplay(quizProgress, quizStartValue, quizProgressEndValue);
+
+
+    //Call subject.php * progress functions
+    progressDisplay(quizProgress, quizStartValue, quizProgressEndValue);
+    progressDisplay(examProgress, examStartValue, examProgressEndValue);
+    progressDisplay(projectsProgress, projectsStartValue, projectsProgressEndValue);
+    progressDisplay(assignmentProgress, assignmentStartValue, assignmentProgressEndValue);
+
+    function progressDisplay(progressIndicator, startValue, endValue) {
+        let progressValue = 0;
+        let progress = setInterval(() => {
+            progressValue++;
+            if (endValue == 0) {
+                progressValue = 0;
+            }
+
+            startValue.textContent = `${progressValue}%`;
+            progressIndicator.style.background = `conic-gradient(
+        #389247 ${progressValue * 3.6}deg,
+        #E0EBFF ${progressValue * 3.6}deg
+    )`;
+            if (progressValue == endValue) {
+                clearInterval(progress);
+            }
+        }, speed);
+    }
+
+    // Calculate Percentage
+    function progressEndValue(count, total) {
+        let result = Math.round((count / total) * 100);
+        if (result == 0) {
+            return 100;
+        }
+        return result;
+    }
+    </script>
 
 </body>
 

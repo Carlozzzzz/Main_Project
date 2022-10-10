@@ -38,12 +38,82 @@
 /* -----End Content----- */
 
 
-/* -----Subjects----- */
+/* -----Subjects index.php #mainPageSubject----- */
+#mainPageSubject .row .card {
+    background-color: #1173d9;
+    color: white;
+}
+
+#mainPageSubject .row .card-body {
+    position: relative;
+}
+
+#mainPageSubject .progress-bar {
+    position: absolute;
+    right: 0;
+}
+
+#mainPageSubject .progress-bar {
+    position: absolute;
+    right: 0;
+}
+
+
+#mainPageSubject .progress-bar .circular-progress {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#mainPageSubject .progress-bar .circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 35%;
+    background-color: #1173D9;
+    border-radius: 50%;
+}
+
+#mainPageSubject .progress-bar .value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #231c3d;
+}
+
+#mainPageSubject .card-body .card-title{
+    font-weight: bold;
+    width: calc(100% - 60px);
+}
+
+#mainPageSubject .card-body p{
+    margin-bottom: 0;
+    width: calc(100% - 60px);
+
+}
+
+#mainPageSubject .card-body .startBtn{
+    background-color: #FFD61E;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#mainPageSubject .card-menus i{
+    font-size: 1.2rem;
+}
+
+#mainPageSubject .card-menus a{
+    font-size: 1.2rem;
+
+}
 
 /* -----End Subjects----- */
 
 /* ------------END HOMEPAGE------------ */
-
 
 /* ------------SUBJECT.php------------ */
 
@@ -64,69 +134,74 @@
     background-color: #EFEFEF;
 }
 
+
+
 /* -----Module Tab- #subjectMainContent ---- */
-#subjectMainContent .nav-link{
+#subjectMainContent .nav-link {
     color: inherit;
     cursor: pointer;
 }
-.card-header {
+
+#subjectMainContent .card-header {
     border-bottom-width: 0px;
 }
 
-.card-body {
+#subjectMainContent .card-body {
     border-top: inherit;
 }
 
-.section-link {
+#subjectMainContent .section-link {
     text-decoration: none;
     color: #212529;
     font-weight: normal;
 }
 
 
-#subjectMainContent .task-table{
+#subjectMainContent .task-table {
     border: 1px solid black;
 }
 
 /* Subject Student Progress */
 
-.circular-progress {
+#subjectMainContent .circular-progress {
     position: relative;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-  }
-  .circular-progress:before {
+}
+
+#subjectMainContent .circular-progress:before {
     content: "";
     position: absolute;
     height: 84%;
     width: 84%;
     background-color: #ffffff;
     border-radius: 50%;
-  }
-  .value-container {
+}
+
+#subjectMainContent .value-container {
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     color: #231c3d;
-  }
-/* -----Subject Student Progress----- */
-  
-/* ------------END SUBJECT.php------------ */
+}
 
+/* -----Subject Student Progress----- */
+
+/* ------------END SUBJECT.php------------ */
 
 
 /* ------------STUDENT.PROFILE.php #studentProfile------------ */
 #studentProfile .img-section {
-    position:relative;
+    position: relative;
     height: 300px;
     width: 100%;
     margin-bottom: 90px;
 }
 
-#studentProfile .img-section .overlay-image{
+#studentProfile .img-section .overlay-image {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -138,7 +213,7 @@
 }
 
 
-#studentProfile .img-section .profile-img{
+#studentProfile .img-section .profile-img {
     position: absolute;
     bottom: -75px;
     z-index: 99;
@@ -148,16 +223,16 @@
 }
 
 /* tablist */
-#studentProfile .tablist .tabcontent{
+#studentProfile .tablist .tabcontent {
     margin-left: 13px;
 }
 
-#studentProfile .tab{
+#studentProfile .tab {
     overflow: hidden;
     border: 1px solid #ccc;
 }
 
-#studentProfile .tab button{
+#studentProfile .tab button {
     background-color: inherit;
     border: none;
     outline: none;
@@ -167,20 +242,21 @@
     font-size: 17px;
 }
 
-.tab button:hover{
+.tab button:hover {
     background-color: #ddd;
 }
 
-.tab button.active{
+.tab button.active {
     background-color: #ccc;
 }
 
-.tabcontent{
+.tabcontent {
     display: none;
-    padding: 6px 12px; 
+    padding: 6px 12px;
     border: 1px solid #ccc;
-    
+
 }
+
 /* ------------END STUDENT.PROFILE.php------------ */
 
 /* 

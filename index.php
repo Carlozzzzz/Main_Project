@@ -18,7 +18,7 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/72c32f013b.js" crossorigin="anonymous"></script>
-   
+
 
 </head>
 
@@ -77,86 +77,22 @@
                 </div>
 
                 <!-- Subjects List -->
-                <div class="row mx-0 mt-3 subject-list" id="mainPageSubject">
-                    <div class="container-fluid custom-border">
+                <!-- Working -->
+                <?php include("assets/tester.view.php") ?>
 
-                        <h3>Subjects</h3>
-                        <div class="row ">
-                            <div class="col-sm-6 col-md-4 pt-2">
-                                <div class="card">
-                                    <img src="images/img-2.jpg" class="card-img-top" alt="Subject Image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Subject Title 1</h4>
-                                        <p class="card-text">Student Section</p>
-                                        <p class="card-text">Subject Duration</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4 pt-2">
-                                <div class="card">
-                                    <img src="images/img-2.jpg" class="card-img-top" alt="Subject Image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Subject Title 1</h4>
-                                        <p class="card-text">Student Section</p>
-                                        <p class="card-text">Subject Duration</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4 pt-2">
-                                <div class="card">
-                                    <img src="images/img-2.jpg" class="card-img-top" alt="Subject Image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Subject Title 1</h4>
-                                        <p class="card-text">Student Section</p>
-                                        <p class="card-text">Subject Duration</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4 pt-2">
-                                <div class="card">
-                                    <img src="images/img-2.jpg" class="card-img-top" alt="Subject Image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Subject Title 1</h4>
-                                        <p class="card-text">Student Section</p>
-                                        <p class="card-text">Subject Duration</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 pt-2">
-                                <div class="card">
-                                    <img src="images/img-2.jpg" class="card-img-top" alt="Subject Image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Subject Title 1</h4>
-                                        <p class="card-text">Student Section</p>
-                                        <p class="card-text">Subject Duration</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
             </div>
 
             <!-- Right Banner -->
             <div class="col-md-2 py-4 " id="rightBanner">
-                    <?php include('assets../banner.view.php') ?>
+                <?php include('assets../banner.view.php') ?>
             </div>
 
         </div>
     </div>
 
 
-    <!-- Javascrpit Files -->
-    <script src="js/main.js"></script>
     
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
@@ -170,6 +106,8 @@
 
     <!-- J-query -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Javascrpit Files -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

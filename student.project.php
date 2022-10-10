@@ -58,7 +58,10 @@
 
     <!-- Javascrpit Files -->
     <script src="js/main.js"></script>
-  
+    <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 
 
     <!-- Bootstrap JS -->
