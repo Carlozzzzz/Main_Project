@@ -32,7 +32,7 @@ $("#examSecondBtn").click(function () {
 });
 
 $("#taskLinkBtn").click(function () {
-    alert("Open exam pane");
+    //alert("Open exam pane");
     bootstrap.Tab.getInstance(triggerTask).show()
 
 });

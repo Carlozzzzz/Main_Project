@@ -4,16 +4,19 @@ body {
     /* background-color: hsl(0, 0%, 94%); */
 }
 
-p,td{
-    font-size: .9rem;
+p,
+td {
+    font-size: .9rem; 
 }
-h3 {
+
+h3 , .h3-font{
     font-size: 1.4rem;
 }
 
-h4 {
+h4, .h4-font {
     font-size: 1.1rem;
 }
+
 
 /* ------Header Navbar Styles------ */
 #header .page-title {
@@ -42,11 +45,21 @@ h4 {
     border: 1px #C8C8C8 solid;
     border-radius: 5px;
     padding: 10px 10px;
+    height: 100%;
 }
 
 .custom-hide {
     display: none;
 }
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
 
 /* -----end custom------- */
 
@@ -84,16 +97,22 @@ i {
     width: 100%;
     height: auto;
     padding: 20px 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding-left: 12px;
 
 }
+
+
 
 #sideNav .navbar-nav .nav-item {
     margin: 10px 15px;
     line-height: 1.5;
 }
 
+#sideNav .navbar-nav .nav-item{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 #sideNav .navbar-nav i {
@@ -108,7 +127,7 @@ i {
 }
 
 /* -----Banner Right----- */
-#rightBanner img {
+.calendar-mini img {
     width: 100%;
 }
 
@@ -195,10 +214,10 @@ i {
     #sideNav.customActive li span {
         display: inline-block;
     }
-    
+
     /* student.profile.php */
-    #studentProfile .student-parent{
-        justify-content:start !important;
+    #studentProfile .student-parent {
+        justify-content: start !important;
         margin-top: 1rem;
     }
 

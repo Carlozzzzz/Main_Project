@@ -1,44 +1,6 @@
-/* ------------HOMEPAGE------------ */
+/***** index.php ****/
 
-/* -----Content----- */
-#mainContent .carousel-item {
-    height: 20rem;
-    background: black;
-    color: #fff;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-}
-
-#mainContent .carousel-item .container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding-bottom: 50px;
-}
-
-#mainContent .content-header {
-    font-weight: 800;
-}
-
-#mainContent .overlay-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    /* adjusting bg-color */
-    opacity: 0.5;
-
-}
-
-/* -----End Content----- */
-
-
-/* -----Subjects index.php #mainPageSubject----- */
+/* --(Teacher and Student)-- subject Section */
 #mainPageSubject .row .card {
     background-color: #1173d9;
     color: white;
@@ -57,7 +19,6 @@
     position: absolute;
     right: 0;
 }
-
 
 #mainPageSubject .progress-bar .circular-progress {
     position: relative;
@@ -84,212 +45,138 @@
     color: #231c3d;
 }
 
-#mainPageSubject .card-body .card-title{
+#mainPageSubject .card-body .card-title {
     font-weight: bold;
+    font-size: 1.1rem;
     width: calc(100% - 60px);
 }
 
-#mainPageSubject .card-body p{
+#mainPageSubject .card-body p {
     margin-bottom: 0;
+    font-size: .9rem;
     width: calc(100% - 60px);
-
 }
 
-#mainPageSubject .card-body .startBtn{
-    background-color: #FFD61E;
+#mainPageSubject .card-body .startBtn {
+    background-color: #F0F2F5;
     border-radius: 30px;
-    color: white;
+    color: #231c3d;
+    width: 150px;
     font-weight: bold;
 }
 
-#mainPageSubject .card-menus i{
+#mainPageSubject .card-menus i {
     font-size: 1.2rem;
 }
 
-#mainPageSubject .card-menus a{
+#mainPageSubject .card-menus a {
     font-size: 1.2rem;
 
 }
 
-/* -----End Subjects----- */
 
-/* ------------END HOMEPAGE------------ */
-
-/* ------------SUBJECT.php------------ */
-
-#subjectMainContent .subject-section {
-    margin-top: 0.8rem;
-}
-
-#subjectMainContent .nav-tabs {
-    border-bottom: 0px solid transparent;
-    --bs-nav-tabs-border-width: 0px;
-}
-
-#subjectMainContent .nav-item .nav-link {
-    padding-left: .8rem;
-}
-
-#subjectMainContent .section-control {
-    background-color: #EFEFEF;
-}
-
-
-
-/* -----Module Tab- #subjectMainContent ---- */
-#subjectMainContent .nav-link {
-    color: inherit;
-    cursor: pointer;
-}
-
-#subjectMainContent .card-header {
-    border-bottom-width: 0px;
-}
-
-#subjectMainContent .card-body {
-    border-top: inherit;
-}
-
-#subjectMainContent .section-link {
-    text-decoration: none;
-    color: #212529;
-    font-weight: normal;
-}
-
-
-#subjectMainContent .task-table {
-    border: 1px solid black;
-}
-
-/* Subject Student Progress */
-
-#subjectMainContent .circular-progress {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-}
-
-#subjectMainContent .circular-progress:before {
-    content: "";
-    position: absolute;
-    height: 84%;
-    width: 84%;
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-
-#subjectMainContent .value-container {
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    color: #231c3d;
-}
-
-/* -----Subject Student Progress----- */
-
-/* ------------END SUBJECT.php------------ */
-
-
-/* ------------STUDENT.PROFILE.php #studentProfile------------ */
-#studentProfile .img-section {
-    position: relative;
-    height: 300px;
+/* --(Teacher and Student)-- subject content */
+/* teacher.subject.php && student.subject.php */
+/* --subject content tab--*/
+.tabs {
+    box-sizing: border-box;
     width: 100%;
-    margin-bottom: 90px;
+    height: 100%;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px #ccc;
 }
 
-#studentProfile .img-section .overlay-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: .9;
+.tab-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
-
-#studentProfile .img-section .profile-img {
-    position: absolute;
-    bottom: -75px;
-    z-index: 99;
-    width: 150px;
-    opacity: .9;
-
-}
-
-/* tablist */
-#studentProfile .tablist .tabcontent {
-    margin-left: 13px;
-}
-
-#studentProfile .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-}
-
-#studentProfile .tab button {
-    background-color: inherit;
-    border: none;
-    outline: none;
+.tab-header>div {
+    width: calc(100% / 4);
+    text-align: center;
+    color: #888;
+    font-weight: 600;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
 }
 
-.tab button:hover {
-    background-color: #ddd;
+.tab-header>div>i {
+    color: inherit;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.tab button.active {
-    background-color: #ccc;
+.tab-header>div.active {
+    color: #00acee;
 }
 
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-
-}
-
-/* ------------END STUDENT.PROFILE.php------------ */
-
-/* 
-.carousel-item {
-    height: 20rem;
-    background: black;
-    color: #fff;
+.tab-indicator {
     position: relative;
-    background-position: center;
-    background-size: cover;
+    width: calc(100% / 4);
+    height: 5px;
+    background: #00acee;
+    left: 0px;
+    border-radius: 5px;
 }
 
-#mainContent .carousel-item .container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding-bottom: 50px;
+.tabs .tab-body {
+    height: calc(100% / 60px);
 }
 
-#mainContent .content-header {
-    font-weight: 800;
+.tabs .tab-body>div {
+    display: none;
+    margin-top: 5px;
 }
 
-#mainContent .overlay-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    /* adjusting bg-color 
-    opacity: 0.5;
+.tabs .tab-body>div.active {
+    display: block;
+    margin-top: 0px;
+}
 
-} */
+.module-actions {
+    width: 100%;
+}
+
+.module-actions i {
+    font-size: 1.5rem;
+}
+
+.tab-content table .form-check {
+    margin: auto;
+}
+
+.tab-content table input {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* --Module Tab-- */
+.section-table tr td:nth-child(2),
+.section-table tr td:nth-child(3),
+.section-table tr td:nth-child(4),
+.section-table tr td:nth-child(5) {
+    width: 1%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.section-module .content-collapse,
+.section-module i {
+    cursor: pointer;
+}
+
+.section-module i {
+    color: inherit;
+}
+
+.section-module .fa-circle-plus {
+    color: green;
+}
+/* --End Module Tab-- */
+
+/* --(Teacher and Student)-- end subject Section */
+/***** end index.php ****/

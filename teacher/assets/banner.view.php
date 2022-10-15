@@ -14,6 +14,14 @@
 </div>
 <div class="custom-border mt-3">
     <div class="announcement-mini">
+        <h4>Todo</h4>
+        <div class="deadlines-item">
+            <p class="text-muted">There's nothing on the list.</p>
+        </div>
+    </div>
+</div>
+<div class="custom-border mt-3">
+    <div class="announcement-mini">
         <h4>Deadlines</h4>
         <div class="deadlines-item">
             <p>This is sample text</p>
