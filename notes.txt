@@ -15,3 +15,23 @@ $(document).ready(function(){
 function activaTab(tab){
   $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
+
+
+Justify-content: center
+Flex-flow: row wrap
+Display: flex
+
+Assignment
+Activity
+Essay
+Project
+
+
+task_tbl
+id
+task_name
+
+
+question_tbl
+choices_tbl
+answer_key_tbl

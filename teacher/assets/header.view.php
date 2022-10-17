@@ -19,7 +19,7 @@
                             <a href="student.calendar.php" class="nav-link"><i class="fa-regular fa-calendar"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Maralit, Carlos Romulo</a>
+                            <a href="" class="nav-link">Johny Shin</a>
                         </li>
                         <li class="nav-item dropdown">
 

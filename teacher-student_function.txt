@@ -44,13 +44,15 @@
 		+Modules
 			+manage modules/task
 			-open modules/task
+			
+	### Working
 	~Task (Open)
 		~assignment
 		~activity
 		~project
 		~essay
-		~quiz [multiple choice, identification, enumiration, essays]
-		~exam [multiple choice, identification, enumiration, essays]
+		~quiz [multiple choice, identification, enumiration]
+		~exam [multiple choice, identification, enumiration]
 	-Task (Create)
 		-assignment
 		-activity
@@ -58,6 +60,8 @@
 		-essay
 		-quiz [multiple choice, identification, enumiration, essays]
 		-exam [multiple choice, identification, enumiration, essays]
+	### End Working
+		
 	-Students
 		-list of students [name, task type, final grade]
 	-Student (Open/Edit)

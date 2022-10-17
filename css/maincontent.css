@@ -1,5 +1,5 @@
 /***** index.php ****/
-
+ 
 /* --(Teacher and Student)-- subject Section */
 #mainPageSubject .row .card {
     background-color: #1173d9;
@@ -177,6 +177,17 @@
     color: green;
 }
 /* --End Module Tab-- */
+.tab-content .table tr td:nth-child(2),
+.tab-content .table tr td:nth-child(3),
+.tab-content .table tr td:nth-child(4),
+.tab-content .table tr td:nth-child(5) {
+    width: 1%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* --Task tab-- */
+/* --End Task tab-- */
 
 /* --(Teacher and Student)-- end subject Section */
 /***** end index.php ****/
